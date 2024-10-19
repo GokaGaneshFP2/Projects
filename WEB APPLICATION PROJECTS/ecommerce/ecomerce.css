@@ -1,0 +1,181 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#bg{
+    background-color: rgba(57, 58, 58, 0.2);
+
+}
+img{
+   
+    margin-right: 30px;
+   
+    vertical-align:middle;
+   
+}
+
+button{
+    border: 0;
+    background: none;
+font-weight: 700;
+    padding: 2%;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: aliceblue;
+    
+
+}
+button:hover{
+    color: rgb(17, 17, 17);
+}
+aside{
+    float: right;
+    display: flex;
+    padding: 2%;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.bn{
+    margin-left: 30px;
+    font-size: x-large;
+
+}
+#back1{
+    background-image: url(https://perseverselearning.net/wp-content/uploads/2019/12/home-new-bg-free-img.jpg);
+background-size: cover;
+
+}
+h1{
+    font-family: sans-serif;
+    font-size:70px;
+    color: aliceblue;
+    margin-top: 7%;
+    margin-left: 30px;
+
+}
+h2{
+    font-size:30px;
+    color: rgb(14, 14, 14);
+    margin-top: 2%;
+    margin-left: 30px;
+
+}
+ #bgg{
+    background-color:rgba(26, 39, 39, 0.1);
+    height:70vh; 
+    width: 50%;
+ 
+}
+input{
+    padding:1%;
+    margin-top: 30px;
+    width: 20%;
+    height: 9vh;
+  margin-left: 30px;
+    border: 1px solid rgb(246, 243, 243);
+    font-weight: 600;
+}
+input:hover{
+    background-color: black;
+    color: aliceblue;
+}
+#find{
+    background:none;
+}
+#find:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.desc{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    position: relative;
+    bottom: 130px;
+    margin-left: 3%;
+    background-color: rgba(57, 58, 58, 0.6);
+   width: 320px;
+   box-shadow: 6px 4px 3px rgb(246, 243, 243);
+    
+    
+}
+#carts{
+    margin:3%;
+   margin-left: 70px;
+  box-shadow: 5px 5px 5px black;
+
+    
+}
+#card{
+    display: flex;
+   
+}
+
+.btn{
+    border: 1px solid white;
+    margin: 10px;
+    translate: 90px;
+    box-shadow: 6px 2px 3px black;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.heading{
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    background-color: aquamarine;
+}
+#image{
+width: 200px;
+height: 200px;
+
+
+}
+#products{
+    display: flex;
+    margin-left: 75px;
+    margin-top: 10px;
+   
+}
+.brand{
+    margin: 10px;
+    font-size: 20px;
+      
+}
+.gender{
+    font-size: medium;
+    font-weight: 100;
+}
+.price{
+    font-size: 25px;
+}
+.star{
+    font-size: large;
+    
+}
+.color{
+    font-size: 30px;
+    color: blue;
+    
+}
+#socialmedia{
+    float: right;
+    font-size: x-large;
+    position: relative;
+    bottom: 20px;
+   
+
+}
+footer{
+    background-color: antiquewhite;
+   height: 10vh;
+   text-align: center;
+   margin-top: 6%;
+   padding-top: 2%;
+}
