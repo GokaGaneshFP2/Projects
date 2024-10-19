@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://freelogopng.com/images/all_img/1688364462amazon-icon-png.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>online shopping </title>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+<img src="https://freelogopng.com/images/all_img/1688364329amazon-logo-png-white.png" alt="logo" width="90px" style="margin-left: 30px;">
+
+   <button onclick="getLocation()" id="location"> <i class='bx bxs-edit-location'></i>Delivering to Hyderabad 500001 <h3 id="demo">Update location</h3></button></i>
+   <select name="" id="Categories">
+    <option value="">All Categories</option>
+    <option value="">Alexa Skills</option>
+    <option value="">Amazon Devices</option>
+    <option value="">Amazon Fashion</option>
+    <option value="">Amazon Fresh</option>
+
+   </select>
+   <input type="search" placeholder="Search Amazon.in" id="searchbar"><i class='bx bx-search-alt-2'></i>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_India.png/2560px-Flag_of_India.png" alt="" width="30px"><select name="lang" id="lang">
+    <option value="" id="text">English</option>
+    <option value="" id="text">Hindi</option>
+    <option value="" id="text">Telugu</option>
+   </select>
+   <button id="sign"><a href="signin.html">Hello,Sign in <h3>Account& Lists</h3></a></button>
+   <button id="order">Returns <h4>& Orders</h4></button>
+  <i class='bx bx-cart'></i>
+</div>
+</div>
+</header>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #navbar{
+        background-color: black;
+        cursor: pointer;
+    }
+    #location{
+        margin-left: 4%;
+        padding: 1%;
+        padding-left: 2%;
+        border: none;
+        background:none;
+        color: rgb(252, 252, 252);
+    }
+    #location:hover{
+        border: 1px solid white;
+    }
+    .bxs-edit-location{
+        font-size: x-large;
+        position: relative;
+        top:6px;
+    }
+    select{
+        padding: 5px;
+        padding-top: 14px;
+        font-size: 15px;
+        width: 50px;
+        border:none;
+        background-color: rgb(194, 193, 193);
+        
+    }
+    option{
+        font-size: 15px;
+    }
+    #searchbar{
+        padding: 5px;
+        padding-top: 14px;
+        font-size:15px;
+        width: 300px;
+        margin-left: -4px;
+        border: none;
+    }
+    .bx-search-alt-2{
+        position: relative;
+        right: 38px;
+        top: 1.4px;
+        font-size: x-large;
+        background-color: rgb(244, 169, 76);
+    padding: 6.9px;
+    }
+    #lang{
+        border: 0;
+        width: 47px;
+        background: none;
+        color: aliceblue;
+        font-weight: 600;
+    }
+    #text{
+        color: black;
+       
+    }
+    #sign{
+        border: none;
+        background: none;
+        color: aliceblue;
+        margin-left: 20px;
+    }
+    #sign:hover{
+        border: 1px solid white;
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    #order{
+        border: 0;
+        background: none;
+        color: aliceblue;
+        margin-left: 20px;
+    }
+    #order:hover{
+        border: 1px solid white;
+        
+    }
+    .bx-cart{
+        color: aliceblue;
+        font-size: 50px;
+        margin-left: 30px;
+        
+
+    }
+    li{
+        display: inline-flex;
+        margin: 5px;
+        font-weight: 600;
+        color: aliceblue;
+    }
+    li:hover{
+        border: 0px solid white;
+        border-bottom-color:aqua;
+        border-bottom-width: 3px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    ul{
+        background-color: rgb(70, 76, 104);
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+    #products{
+      border: 3px solid black;  
+      width: 350px;
+      height: 350px;
+      margin-top: 10px;
+      margin-right: 20px;
+      box-shadow: 4px 9px 9px  rgb(120, 115, 115);
+    }
+    #products1{
+     
+     display: flex;
+     margin-left: 60px;
+     
+    }
+    #imag{
+      
+    padding: 10px;
+margin: 10px;
+
+    }
+
+    @media screen and (min-width:320px) and (max-width:426px) {
+        header{
+            width: 360px;
+
+        }
+        ul{
+          
+           width: 340px;
+        }
+        #products{
+      border: 3px solid black;  
+      width: 350px;
+      height: 350px;
+      margin-top: 10px;
+      
+      box-shadow: 4px 9px 9px  rgb(120, 115, 115);
+    }
+        #products1{
+     
+     display:block;
+     margin-left: 0px;
+     
+     
+    }
+    }
+    @media screen and (min-width:768px) and (max-width:1025px){
+header{
+    width: 155%;
+    font-size:5px;
+}
+
+        ul{
+    width: 152.3%;
+    font-size: 14.8px;
+}
+
+
+
+         #products{
+      border: 3px solid black;  
+      width: 370px;
+      height: 350px;
+      margin-top: 10px;
+      position: relative;
+      right: 60px;
+      
+    
+    
+      box-shadow: 4px 9px 9px  rgb(120, 115, 115);
+    }
+    
+    #products1{
+     
+     display:flex;
+    
+    
+     
+     
+    }
+    #imag{
+      
+      padding: 10px;
+  margin: 10px;
+  width: 350px;
+  
+      }
+    }
+    
+</style>
+<script>
+    const x = document.getElementById("demo");
+    
+    function getLocation() {
+      try {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } catch {
+        x.innerHTML = err;
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+</head>
+<body>
+    <div>
+       <ul>
+        <li><i class='bx bx-menu'>All</i></li>
+       <li> Fresh</li>
+<li>Amazon miniTV</li>
+<li>Sell</li>
+<li>Best Sellers</li>
+<li>Today's Deals</li>
+<li>Mobiles</li>
+<li>Customer Service</li>
+<li>Prime</li>
+<li>Electronics</li>
+<li>Fashion</li>
+<li>Home & Kitchen</li>
+<li>New Releases</li>
+<li>Amazon Pay</li>
+       </ul> 
+    </div>
+    <div id="products1">
+    <div id="products">
+        <div id="imag">
+            <h2>Appliances for your home | Up to 55% off</h2>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg" alt="" width="150">
+        
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg" alt="" width="150">
+        
+        </div>
+    </div>
+    <div id="products">
+        <div id="imag">
+            <h2>Revamp your home in style</h2><br><br>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg" alt="" width="150">
+        
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg" alt="" width="150">
+        
+        </div>
+    </div>
+
+    <div id="products">
+        <div id="imag">
+            <h2>Starting ₹149 | Headphones</h2><br><br>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg" alt="" width="150">
+        
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult._SY232_CB553870684_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg" alt="" width="150">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_1._SY232_CB570220221_.jpg" alt="" width="150">
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
