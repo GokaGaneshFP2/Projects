@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #signin,select{
+        float: right;
+    }
+    p{
+        background-color: black;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+
+    }
+    select,#signin{
+       padding: 10px;
+       margin: 5px;
+       border-radius: 10px;
+       width: 90px;
+       
+    }
+    select{
+        color: aliceblue;
+        background-color: black;
+        border: 2px solid white;
+        font-weight: 600;
+        
+    }
+    #signin{
+        background-color: rgb(225, 59, 3);
+        border:2px solid white;
+        font-weight: 800;
+    }
+    .bg{
+        background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+      width: 100%;
+      
+      background-size: cover;
+       height: 85vh; 
+    }
+    .text{
+        text-align: center;
+        color: aliceblue;
+        font-family: serif;
+        font-size: x-large;
+        margin-top: 30px;
+    }
+    #email{
+        padding: 15px;
+        margin: 60px;
+        border-radius: 5px;
+        width: 270px;
+        outline: 3px solid white;
+    }
+    #get{
+        padding: 15px;
+        border-radius: 5px;
+        background-color: red;
+        color: aliceblue;
+        width: 150px;
+        outline: 2px solid white;
+    }
+    footer{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        height: 50px;
+    }
+    i{
+        position: relative;
+        right: 90px;
+        top: 5px;
+        color: black;
+    }
+    #geticon{
+        position: relative;
+        right: 30px;
+        top: 5px;
+        color: black;
+    }
+</style>
+<body>
+    <div class="bg">
+        <div>
+            <p>
+                <img src="https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png" width="200px" height="50px" alt="logo">
+                
+                <a href="netflix login.html" target="_blank"><input id="signin" type="submit" value="sign In" ></a>
+                <select>
+                    
+                    <option value="">English</option>
+                    <option value="">Telugu</option>
+                    <option value="">Hindi</option>
+                </select>
+            </p>
+        </div>
+        <div class="text">
+            <h1>Unlimited movies,TV shows and <br>more</h1>
+            <h6>Watch anywhere.Cancel anytime</h6>
+            <h6>Ready to watch? enter your email to create or restart your membership</h6>
+<div>
+    <form action="" method="get" target="_blank">
+    <input type="email" placeholder="Email address" id="email" required><i class='bx bxs-envelope'></i>
+    <input type="submit" value="Get Started" id="get"><i  id="geticon"class='bx bx-chevron-right'></i></form>
+</div>
+        </div>
+    </div>
+    <footer>
+        <h2>Enjoy on your TV</h2>
+        <h6>Watch on smart TVs,playstation,xbox,chromecast,Apple TV,Blu-ray players and more.</h6><br<br>
+    </footer>
+</body>
+</html>
